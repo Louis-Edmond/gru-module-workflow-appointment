@@ -146,5 +146,18 @@
  		p:configRequired="false"
  		p:taskForAutomaticAction="false" 
  		p:formTaskRequired="true" />
+ 		
+		<!-- Archivers -->
+	    <bean id="workflow-appointment.workflowAppointmentResourceArchiver"
+	        class="fr.paris.lutece.plugins.workflow.modules.appointment.service.archiver.WorkflowAppointmentResourceArchiver" />
+        <bean id="workflow-appointment.workflowAppointmentAnonymizeArchiveProcessingService"
+	        class="fr.paris.lutece.plugins.workflow.modules.appointment.service.archiver.WorkflowAppointmentAnonymizeArchiveProcessingService" />
+	        
+        <bean id="workflow-appointment.appointmentFormIdAnonymizationService"
+	        class="fr.paris.lutece.plugins.workflow.modules.appointment.service.archiver.anonymization.AppointmentFormIdAnonymizationService" />
+        <bean id="workflow-appointment.randomGuidAnonymizationService"
+	        class="fr.paris.lutece.plugins.workflow.modules.appointment.service.archiver.anonymization.RandomGuidAnonymizationService" />
+        <bean id="workflow-appointment.randomNumberAnonymizationService"
+	        class="fr.paris.lutece.plugins.workflow.modules.appointment.service.archiver.anonymization.RandomNumberAnonymizationService" />
 	
 </beans>
